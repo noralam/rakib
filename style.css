@@ -1,0 +1,1016 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Template Name: Cutechurch
+Template URI: http://devitems.com
+Description: One page template
+Author: MD.Rakib Hossion
+Author URI:https://www.facebook.com/rakibhossain82
+Version: 1.0
+
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+[Table of contents]
+[1. body ]
+	[2. Header ]
+		[2.1 Header-Top ]
+		[2.2 Header-Menu ]
+			[2.2.1 Logo ]
+			[2.2.2 Mainmenu ]
+	[3. Video ]
+	[4. Clock ]
+		[4.1 Clock-Text ]
+	[5. Event ]
+		[5.1 Event-Text ]
+		[5.2 Post-Time-Text ]
+		[5.3 Button ]
+	[6. About ]
+	[7. About-slider ]
+	[8. Charity ]
+		[8.1 Charity-Text ]
+		[8.2 Rangeslider-Text ]
+	[9. Popup-Slider ]
+		[9.1 Icon-Image-Text ]
+	[10. blog ]
+		[10.1 Blog-Text ]
+			[10.1.1 Single-Blog-Text ]
+		[10.2 FAQ ]
+	[11. Cutechurch ]
+		[11.1 Single_Cutechurch ]
+		[11.2 Cutechurch-Overlay-And-Bg ]
+		[11.3 Cutechurch-Text ]
+	[12. Testmonial ]
+	[13. Brand-Logo ]
+	[14. Google-Map ]
+	[15. Get-In-Now ]
+	[16. Contact ]
+	[13. Footer ]
+	/*ScrollUp*/
+/*-------------------------------------------------------------------*/
+.alignleft {
+  float:left;
+  margin-right:15px;
+  margin-bottom: 15px;
+}
+.alignright {
+  float:right;
+  margin-left:15px;
+  margin-bottom: 15px;
+}
+.aligncenter {
+  display:block;
+  margin:0 auto 15px;
+}
+a:focus {
+  outline:0px solid;
+}
+img {
+  max-width:100%;
+  height:auto;
+}
+.fix {
+  overflow:hidden;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin:0;
+  padding:0;
+  text-transform: uppercase;
+}
+h3 {
+  font-size: 18px;
+}
+p{
+	font-size:13px;
+	color:#555;
+}
+a {
+  color:#fff;
+  text-decoration:none;
+  transition: all 300ms ease-out 0s;
+  text-transform: uppercase;
+}
+*{
+  transition: all 300ms ease-out 0s;}
+a:hover{
+  text-decoration:none;
+  color:#fff;
+}
+/*-----------
+[ Section-Title ]
+------------*/
+.section_padding {
+  padding: 90px 0;
+}
+.section-title h1 {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding-bottom: 15px;
+}
+.section-title {
+  margin-bottom:40px;
+}
+.section-title p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.col-text-center{
+	float: none !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+.balck_title::after, .balck_title::before {
+  background: #000 none repeat scroll 0 0;
+  bottom: 9px;
+  content: "";
+  height: 2px;
+  left: 28%;
+  position: absolute;
+  width: 15%;
+}
+.balck_title::before {
+  left: 52%;
+}
+.balck_title h1 {
+  color: #000;
+  padding-bottom: 20px;
+}
+.balck_title p {
+  position: relative;
+}
+.balck_title p::after {
+  border: 2px solid #000;
+  bottom: 3px;
+  content: "";
+  height: 15px;
+  position: absolute;
+  right: 50%;
+  width: 15px;
+}
+.balck_title:hover.balck_title p::after{
+	background:#000000;
+}
+.white_title::after, .white_title::before {
+  background: #ffffff none repeat scroll 0 0;
+}
+.white_title h1 {
+  color: #ffffff;
+}
+.white_title p::after {
+  border: 2px solid #ffffff;
+}
+.white_title:hover.white_title p::after{
+	background:#ffffff;
+}
+/*------------------------------------------------------------------
+[1. body ]
+--------------------------------------------------------------------*/
+body {
+	background: #ffffff;
+	color: #fff;
+	font-size: 15px;
+	line-height: 1.4;
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+    position:relative;
+}
+/*------------------------------------------------------------------
+[2. Header ]
+--------------------------------------------------------------------*/
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  content: "";
+  z-index: 2;
+}
+/*------------------------
+[2.1 Header-Top ]
+-------------------------*/
+.header_top {
+  padding-top: 25px;
+}
+.email_icon a {
+  text-transform: inherit;
+}
+.email_icon p {
+  color: #fff;
+}
+.email_icon p i {
+  font-size: 15px;
+  margin-right: 10px;
+}
+.top_social_icon a {
+  color: #fff;
+  font-size: 15px;
+  margin-right: 5px;
+  padding: 5px 10px;
+}
+.top_social_icon a:hover{
+  color: #999999;
+}
+/*---------------------------
+[2.2 Header-Menu ]
+---------------------------*/
+/*--------------
+[2.2.1 Logo ]
+---------------*/
+.logo {
+  float: left;
+  max-width: 110px;
+  padding-top: 18px;
+}
+/*--------------
+[2.2.2 Mainmenu ]
+---------------*/
+.slicknav_menu {
+	display:none;
+}
+.mainmenu {
+  float: right;
+}
+.header_menu {
+  background: rgba(255, 255, 255, 0.34) none repeat scroll 0 0;
+  left: 0;
+  position: absolute;
+  top: 70px;
+  width: 100%;
+}
+.header_menu.cloned {
+  background: #fff none repeat scroll 0 0;
+  box-shadow: 0px 0px 5px 0px #000;
+}
+.header_menu.cloned #nav a {
+  color: #000000;
+}
+#nav {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+}
+#nav li {
+  float: left;
+  padding: 0;
+}
+#nav a {
+  color: #fff;
+  margin: 15px 20px;
+  padding: 10px 0;
+  position: relative;
+  font-size: 14px;
+}
+#nav a::before {
+  border-bottom: 2px solid #000000;
+  color: #000000;
+  content: attr(data-hover);
+  left: 0;
+  max-width: 0;
+  overflow: hidden;
+  padding: 10px 0;
+  position: absolute;
+  top: 0;
+  transition: max-width 0.5s ease 0s;
+}
+.nav.nav-tabs {
+  border-bottom: 0 none;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+  background:none;
+  border-width: 0;
+}
+.nav-tabs > li > a {
+  border: 0 none;
+  border-radius: 0;
+}
+#nav a:hover{
+  background:none;
+}
+#nav a:hover::before, #nav a:focus::before {
+  max-width: 100%;
+}
+.header_menu.cloned img {
+  background: #000;
+  padding: 3px;
+}
+/*------------------------------------------------------------------
+[3. Video ]
+--------------------------------------------------------------------*/
+.video.section_padding::after {
+  background: #000 none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.5;
+  position: absolute;
+  bottom: 4px;
+  width: 100%;
+}
+.video {
+  height: 100%;
+  overflow: hidden;
+  padding:0;
+  position: relative;
+}
+#bgvid {
+  min-width: 100%;
+  position: relative;
+  z-index: -100;
+}
+.video-text {
+  bottom: 0;
+  height: 80px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 80%;
+  z-index: 1;
+}
+.video {
+    position: relative;
+}
+.video-text  h1 {
+    font-size: 65px;
+    line-height: 60px;
+    margin-bottom: 10px;
+    text-shadow: 2px 0 2px #ccc;
+}
+.video-text  p {
+    color: #fff;
+    font-size: 18px;
+    margin: 16px 0;
+}
+.video-text  a {
+    border: 1px solid #fff;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+}
+/*------------------------------------------------------------------
+[4. Clock ]
+--------------------------------------------------------------------*/
+.clock.section_padding {
+  background: #fff;
+}
+/*-------------------
+[4.1 Clock-Text ]
+---------------------*/
+.clock_text {
+  text-transform: uppercase;
+}
+.clock_text h3 {
+  color: #000;
+}
+.clock_text > span {
+  color: #555;
+  font-size: 13px;
+  letter-spacing: 2px;
+  line-height: 2;
+}
+.flip-clock-wrapper {
+  padding-top: 50px;
+  z-index: 1;
+  margin-left: 8%;
+}
+/*------------------------------------------------------------------
+[5. Event ]
+--------------------------------------------------------------------*/
+.event.section_padding {
+  background: #000;
+}
+.single_event {
+  padding: 10px;
+}
+.single_event {
+  background: #fff none repeat scroll 0 0;
+  margin: 15px 0;
+  display: inline-block;
+}
+.event_img {
+  float: left;
+  margin-right: 20px;
+  position: relative;
+  width: 30%;
+}
+/*-------------------
+[5.1 Event-Text ]
+---------------------*/
+.event_text {
+  padding: 20px 0;
+}
+.event_time {
+  background: #000 none repeat scroll 0 0;
+}
+.hover_date {
+  background: #606060 none repeat scroll 0 0;
+  border-radius: 5px 0 0 5px;
+  border-right: 1px solid #999;
+  color: #fff;
+  left: 18%;
+  padding: 13px 24px;
+  position: absolute;
+  width: 16%;
+  height: 75px;
+}
+.hover_date h5 {
+  font-size: 25px;
+}
+.event_text span {
+  color: #999;
+  font-size: 14px;
+}
+/*-------------------
+[5.2 Post-Time-Text ]
+---------------------*/
+.post_time_text {
+  color: #fff;
+  display: inline-block;
+  padding: 9px 18px;
+  text-transform: uppercase;
+}
+.post_time_text h6 {
+  margin-bottom: 3px;
+}
+.event_text > h3 {
+  color: #000;
+  margin-top: 10px;
+}
+.event_text p {
+  padding: 12px 0 0;
+}
+.event_text > a {
+  color: #000;
+  font-size: 12px;
+}
+.event_text a:hover {
+  color: #777;
+}
+/*-------------------
+[5.3 Button ]
+---------------------*/
+.all_event a ,
+.video-text a {
+  border: 1px solid #000;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 15px;
+  position: relative;
+  z-index: 1;
+  background: #000;
+}
+.white_color a {
+  border: 1px solid #ffffff;
+}
+.all_event :after,
+.video-text a:after {
+  background: #fff none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: all 0.5s ease 0s;
+  width: 0;
+  z-index: -1;
+}
+.all_event a:hover:after,
+.video-text a:hover:after {
+  width: 100%;
+}
+.all_event a:hover ,
+.video-text a:hover {
+  color: #000;
+  z-index: 9;
+}
+/*------------------------------------------------------------------
+[6. About ]
+--------------------------------------------------------------------*/
+.about.section_padding {
+  background: #ddd;
+}
+.about_image img {
+  border: 4px solid #fff;
+  margin-bottom: 50px;
+}
+.cen_about h1 {
+  padding-bottom: 5px;
+}
+.cen_about {
+  margin-bottom: 15px;
+}
+/*------------------------------------------------------------------
+[7. About-slider ]
+--------------------------------------------------------------------*/
+.bg_overlay{position:relative;}
+.bg_overlay::after {
+  background: #000 none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  opacity: .5;
+}
+.about-slider.section_padding {
+  position: relative;
+  z-index:2;
+}
+.about-slider:after,.about-slider:before {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  content: "";
+  height: 100%;
+  background-size: cover;
+}
+.about-slider:after {
+  left: 0;
+  background: url(images/about-slider-bg/about-slider-bg-1.jpg) no-repeat scroll center center;
+}
+.about-slider:before{
+  right: 0;
+  background: url(images/about-slider-bg/about-slider-bg-2.jpg)no-repeat scroll center center;
+}
+.single_slider > p {
+  color: #fff;
+  font-size: 15px;
+  padding: 0 20px;
+  letter-spacing: 1px;
+}
+.item .single_slider,.fawesome-control{
+  position: relative;
+  z-index: 2;
+}
+.single_slider > span,.fawesome-control {
+  margin-left: 25%;
+  font-size: 12px;
+}
+.fawesome-control {
+  font-size: 25px;
+}
+/*------------------------------------------------------------------
+[8. Charity ]
+--------------------------------------------------------------------*/
+.charity_img {
+  float: left;
+  width: 50%;
+  margin-right: 30px;
+}
+.charity_time {
+  background: #ddd none repeat scroll 0 0;
+  padding: 20px;
+}
+/*-------------------
+[8.1 Charity-Text ]
+---------------------*/
+.charity_all_text {
+  display: flex;
+}
+.charity_text {
+  float: left;
+  margin-bottom: 15px;
+  margin-right: 20%;
+}
+.charity_text > h2 {
+  color: #000;
+  margin-bottom: 5px;
+}
+.charity_text > span {
+  color: #333;
+}
+.charity_icon {
+  color: #000;
+}
+.charity_icon a i {
+  font-size: 16px;
+  margin: 5px;
+  padding: 5px;
+  color: #444;
+}
+.charity_icon a i:hover{
+  color: #000;
+}
+.charity_p > p {
+  font-size: 15px;
+  line-height: 25px;
+}
+/*-------------------
+[8.2 Rangeslider-Text ]
+---------------------*/
+.donate_text {
+  background: #333 none repeat scroll 0 0;
+  padding: 21px;
+}
+.rangeslider_text {
+  float: left;
+  width: 30%;
+}
+.rangeslider_text > p {
+  color: #999;
+  font-size: 15px;
+}
+.rangeslider_text span {
+  color: #fff;
+}
+.range_btn a{margin-top:0;}
+#slider-5 {
+  background: #000;
+}
+#slider-5 a{
+  background: #999 none repeat scroll 0 0;
+  color: #ddd;
+}
+.rangeslider_text input {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: medium none;
+  width: 15%;
+}
+/*------------------------------------------------------------------
+[9. Popup-Slider ]
+--------------------------------------------------------------------*/
+.popup_slider.section_padding {
+  background: #000 none repeat scroll 0 0;
+  padding: 0;
+}
+.fa.fa-angle-left.popup_prev,.fa.fa-angle-right.popup_next{
+  position: absolute;
+  left: 48%;
+  bottom: -10%;
+  font-size: 30px;
+}
+.fa.fa-angle-right.popup_next {
+  left: 50%;
+}
+/*-------------------
+[9.1 Icon-Image-Text ]
+-------------------*/
+.icon_image {
+  position: relative;
+}
+.icon_image i {
+  color: #fff;
+  font-size: 25px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  opacity: 0;
+}
+.icon_image:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  content: "";
+  background: #000;
+  opacity: .5;
+  transition:0.5s ease 0s;
+}
+.icon_image:hover:after {
+  width: 100%;
+}
+.icon_image:hover.icon_image i {
+  opacity:1;
+}
+/*------------------------------------------------------------------
+[10. blog ]
+--------------------------------------------------------------------*/
+.blog_title::after, .blog_title::before {
+  bottom: 9px;
+  left: 18%;
+  width: 10%;
+}
+.blog_title::before {
+  left: 0;
+}
+.blog_title p::after {
+  left: 13%;
+}
+.blog_title p {
+  padding-bottom: 10px;
+}
+/*-------------------
+[10.1 Blog-Text ]
+-------------------*/
+.single_blog.wow.fadeInLeft.animated {
+  background: #444;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.month_text {
+  border-right: none;
+  left: 0;
+  transform: none;
+}
+.single_blog:hover .month_text {
+  left: -16%;
+}
+.blog_img {
+  position: relative;
+}
+.blog_img a img {
+  border-radius: 5px;
+  float: left;
+  margin-right: 10px;
+  width: 25%;
+}
+/*-------------------
+[10.1.1 Single-Blog-Text ]
+-------------------*/
+.blog_text {
+  padding: 10px;
+}
+.blog_text a h3 {
+  margin-bottom: 5px;
+}
+.blog_text a h3:hover{
+  text-decoration:underline;
+  color:#999;
+}
+.blog_text > p {
+  color: #ddd;
+  font-size: 14px;
+}
+.blog_text > span {
+  font-size: 12px;
+}
+/*----------------------------
+[10.2 FAQ ]
+-----------------------------*/
+.faq_panel {
+  background-color: #ddd;
+  border-radius: 0;
+}
+.faq_title.panel-title h3 {
+  color: #ddd;
+  display: inline-block;
+}
+.faq_heading.panel-heading {
+  background: #444 none repeat scroll 0 0;
+}
+.faq_title a.collapsed {
+  display: block;
+}
+.faq_title.panel-title,.panel-collapse.collapse.in {
+  position: relative;
+}
+.collapsed::after,.panel-collapse.collapse.in:after {
+  color: #fff;
+  content: "\f105";
+  font-family: fontawesome;
+  font-size: 20px;
+  position: absolute;
+  right: 0;
+}
+.panel-collapse.collapse.in:after {
+  right: 10px;
+  content: "";
+  top: -33px;
+}
+.panel-body p a {
+  color: #000;
+}
+/*------------------------------------------------------------------
+[11. Cutechurch ]
+--------------------------------------------------------------------*/
+.cutechurch_overlay::after {
+  width: 50%;
+}
+.cutechurch_overlay {
+  padding: 40px 0;
+}
+/*----------------------------
+[11.1 Single_Cutechurch ]
+-----------------------------*/
+.single_cutechurch::after {
+  background: rgba(0, 0, 0, 0) url("images/cutechurch/cutechurch-bg-1.jpg") no-repeat scroll center center;
+}
+.single_cutechurch::before {
+  background: #fff;
+}
+.cutechurch_overlay::after {
+  transition: all 0.5s ease 0s;
+  width: 0;
+}
+.cutechurch_overlay:hover:after {
+  width: 50%;
+}
+.cutechurch_text{
+  position:relative;
+  z-index:1;
+}
+.cutechurch_text::after {
+  border-bottom: 20px solid transparent;
+  border-right: 40px solid #fff;
+  border-top: 20px solid transparent;
+  content: "";
+  height: 0;
+  left: -10%;
+  position: absolute;
+  top: 34%;
+  width: 0;
+}
+/*----------------------------
+[11.2 Cutechurch-Overlay-And-Bg ]
+-----------------------------*/
+.bg_overlay_2.cutechurch_overlay_2 {
+  position: relative;
+}
+.cutechurch_overlay_2::after {
+  left: 50%;
+  width: 50%;
+}
+.single_cutechurch_2::after {
+  background: #fff;
+}
+.single_cutechurch_2::before {
+  background: rgba(0, 0, 0, 0) url("images/cutechurch/cutechurch-bg-2.jpg") no-repeat scroll center center;
+}
+.single_cutechurch_3::after {
+  background: rgba(0, 0, 0, 0) url("images/cutechurch/cutechurch-bg-3.jpg") no-repeat scroll center center;
+}
+.single_cutechurch_4::before {
+  background: rgba(0, 0, 0, 0) url("images/cutechurch/cutechurch-bg-4.jpg") no-repeat scroll center center;
+}
+.single_cutechurch_5::after {
+  background: rgba(0, 0, 0, 0) url("images/cutechurch/cutechurch-bg-5.jpg") no-repeat scroll center center;
+}
+.single_cutechurch_6::before {
+  background: rgba(0, 0, 0, 0) url("images/cutechurch/cutechurch-bg-6.jpg") no-repeat scroll center center;
+}
+.cutechurch_overlay_2::after {
+  transition: all 0.5s ease 0s;
+  width: 0;
+}
+.cutechurch_overlay_2:hover:after {
+  width: 50%;
+}
+.cutechurch_text_2::after {
+  left: 102%;
+  top: 34%;
+  transform: rotate(180deg);
+}
+/*----------------------------
+[11.3 Cutechurch-Text ]
+-----------------------------*/
+.cutechurch_text h3 {
+  color: #000;
+  margin-bottom: 8px;
+}
+.cutechurch_text p {
+  color: #444;
+  font-size: 15px;
+}
+.cutechurch_text p i {
+  color: #000;
+  margin-right: 15px;
+}
+/*------------------------------------------------------------------
+[12. Testmonial ]
+--------------------------------------------------------------------*/
+.testmonial{background:#ddd;}
+.testmonial_text {
+  padding: 0 80px;
+}
+.testmonial_text > img {
+  width: 120px;
+  height: 120px;
+  border: outset;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.testmonial_text p {
+  font-size: 14px;
+  line-height: 22px;
+}
+.testmonial_text > h4 {
+  margin-bottom: 10px;
+  color: #000;
+}
+.all_testmonial {
+  margin-top: 50px;
+}
+/*------------------------------------------------------------------
+[13. Brand-Logo ]
+--------------------------------------------------------------------*/
+.brand_logo {
+  background: #000 none repeat scroll 0 0;
+  overflow: hidden;
+}
+#brand_logo > img {
+  padding: 10px;
+  width: 16%;
+}
+/*------------------------------------------------------------------
+[14. Google-Map ]
+--------------------------------------------------------------------*/
+#googleMap{
+  width:100%;
+  height:400px;
+}
+/*------------------------------------------------------------------
+[15. Get-In-Now ]
+--------------------------------------------------------------------*/
+.get_in_text{
+  float:left;
+  margin-right:20px;
+}
+.get_in_text h4 {
+  color: #000;
+  font-size: 15px;
+  margin-bottom: 5px;
+  text-transform: inherit;
+  letter-spacing: 1px;
+  line-height: 22px;
+}
+/*------------------------------------------------------------------
+[16. Contact ]
+--------------------------------------------------------------------*/
+.contact {
+  background: #000 none repeat scroll 0 0;
+}
+.contact_title,.contact_title h3 {
+  margin-bottom: 15px;
+}
+.about_us > p,.about_link > li a  {
+  font-size: 13px;
+  line-height: 24px;
+  color: #999;
+}
+#about_p_text {
+  padding-right: 50px;
+}
+.about_link > li a:hover {
+  color: #555;
+  text-decoration: underline;
+  margin-left: 5px;
+}
+.newslatter .email_text {
+  border: 1px solid #fff;
+  border-radius: 5px;
+  float: left;
+  margin-right: 20px;
+  padding: 5px;
+  width: 60%;
+  background: #000;
+}
+.newslatter .btn-black {
+  background: #000 none repeat scroll 0 0;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 5px;
+}
+/*------------------------------------------------------------------
+[13. Footer ]
+--------------------------------------------------------------------*/
+footer {
+  background: #111 none repeat scroll 0 0;
+  padding: 30px 0;
+}
+.footer_copyright p {
+  margin: 0;
+  color: #fff;
+  float:left;
+}
+.social_icon a {
+  border: 1px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 15px;
+  margin-right: 5px;
+  padding: 5px 10px;
+}
+.social_icon a:hover,.newslatter .btn-black:hover {
+  background: #fff none repeat scroll 0 0;
+  color:#000;
+}
+/*ScrollUp*/
+#scrollUp {
+  background-color: #000000;
+  border-radius: 2px;
+  padding: 5px 8px;
+  right: 45px;
+  text-align: center;
+  text-decoration: none;
+  top: 84%;
+}
+#scrollUp:hover{
+  opacity:.6;
+}
+.scrollToTop i {
+  color: #fff;
+  font-size: 18px;
+  margin: 0 6px;
+}
+/*--------------------------------------------------------
+---------------------------[End ]-----------------------
+---------------------------------------------------------*/
